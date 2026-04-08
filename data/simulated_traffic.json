@@ -1,0 +1,402 @@
+[
+  {
+    "id": "msg_001",
+    "customer_name": "Aaron Miller",
+    "email": "aaron.m@email.com",
+    "text": "Can you give me an update on my tracking number? It has been stuck on 'Label Created' for four days.",
+    "timestamp": "2026-04-08T08:05:00Z",
+    "channel": "email"
+  },
+  {
+    "id": "msg_002",
+    "customer_name": "Betty Davis",
+    "email": "betty.d@email.com",
+    "text": "I need to cancel my order and get my money back. I found it cheaper somewhere else.",
+    "timestamp": "2026-04-08T08:12:00Z",
+    "channel": "chat"
+  },
+  {
+    "id": "msg_003",
+    "customer_name": "Carlos Ruiz",
+    "email": "carlos.r@email.com",
+    "text": "This VR headset is a complete scam. The lenses are scratched out of the box and it won't even turn on.",
+    "timestamp": "2026-04-08T08:18:00Z",
+    "channel": "email"
+  },
+  {
+    "id": "msg_004",
+    "customer_name": "Diana Prince",
+    "email": "diana.p@email.com",
+    "text": "Do you guys do price matching? Another store has this drone for $50 less.",
+    "timestamp": "2026-04-08T08:25:00Z",
+    "channel": "social_media"
+  },
+  {
+    "id": "msg_005",
+    "customer_name": "Crypto King",
+    "email": "spam1@crypto.com",
+    "text": "Invest $10 and make $10,000 in one week! Click my bio link to join the VIP crypto signal group now!!!",
+    "timestamp": "2026-04-08T08:30:00Z",
+    "channel": "social_media"
+  },
+  {
+    "id": "msg_006",
+    "customer_name": "Evan Wright",
+    "email": "evan.w@email.com",
+    "text": "My package says delivered on the porch but I've checked everywhere and it's not here. Please advise.",
+    "timestamp": "2026-04-08T08:45:00Z",
+    "channel": "chat"
+  },
+  {
+    "id": "msg_007",
+    "customer_name": "Fiona Gallagher",
+    "email": "fiona.g@email.com",
+    "text": "I accidentally bought two of the same item. How do I go about returning the extra one for a refund?",
+    "timestamp": "2026-04-08T08:55:00Z",
+    "channel": "email"
+  },
+  {
+    "id": "msg_008",
+    "customer_name": "George Costanza",
+    "email": "george.c@email.com",
+    "text": "The jacket you sent is fake. The zipper is cheap plastic and the logo is misspelled. I am reporting this.",
+    "timestamp": "2026-04-08T09:05:00Z",
+    "channel": "chat"
+  },
+  {
+    "id": "msg_009",
+    "customer_name": "Hannah Abbott",
+    "email": "hannah.a@email.com",
+    "text": "Is the $20 shipping fee standard for international orders, or is there a cheaper option?",
+    "timestamp": "2026-04-08T09:15:00Z",
+    "channel": "email"
+  },
+  {
+    "id": "msg_010",
+    "customer_name": "WeightLoss Guru",
+    "email": "spam2@diet.com",
+    "text": "Shed belly fat overnight with this one weird trick! Doctors hate it! Link below.",
+    "timestamp": "2026-04-08T09:20:00Z",
+    "channel": "social_media"
+  },
+  {
+    "id": "msg_011",
+    "customer_name": "Ian Malcolm",
+    "email": "ian.m@email.com",
+    "text": "I ordered expedited shipping but it has been a week. When is my stuff actually going to get here?",
+    "timestamp": "2026-04-08T09:35:00Z",
+    "channel": "chat"
+  },
+  {
+    "id": "msg_012",
+    "customer_name": "Julia Stiles",
+    "email": "julia.s@email.com",
+    "text": "Please credit my account back for order #8812. The items didn't fit and I dropped them off at the post office yesterday.",
+    "timestamp": "2026-04-08T09:45:00Z",
+    "channel": "email"
+  },
+  {
+    "id": "msg_013",
+    "customer_name": "Kevin Hart",
+    "email": "kevin.h@email.com",
+    "text": "This charging cable caught fire while plugged into my wall. This is a massive lawsuit waiting to happen. Contact me ASAP.",
+    "timestamp": "2026-04-08T09:55:00Z",
+    "channel": "email"
+  },
+  {
+    "id": "msg_014",
+    "customer_name": "Laura Croft",
+    "email": "laura.c@email.com",
+    "text": "If I buy three of the smartwatches, what is the total cost including tax?",
+    "timestamp": "2026-04-08T10:05:00Z",
+    "channel": "chat"
+  },
+  {
+    "id": "msg_015",
+    "customer_name": "Bot992",
+    "email": "spam3@bot.com",
+    "text": "🔥🔥🔥 Check out my profile for explicit content and free videos! 🔥🔥🔥",
+    "timestamp": "2026-04-08T10:10:00Z",
+    "channel": "social_media"
+  },
+  {
+    "id": "msg_016",
+    "customer_name": "Mike Wazowski",
+    "email": "mike.w@email.com",
+    "text": "Where is my parcel? The app says it is out for delivery but the mailman already came by.",
+    "timestamp": "2026-04-08T10:25:00Z",
+    "channel": "chat"
+  },
+  {
+    "id": "msg_017",
+    "customer_name": "Nancy Drew",
+    "email": "nancy.d@email.com",
+    "text": "I am returning the shoes. Please process my refund to the original credit card used.",
+    "timestamp": "2026-04-08T10:35:00Z",
+    "channel": "email"
+  },
+  {
+    "id": "msg_018",
+    "customer_name": "Oscar Martinez",
+    "email": "oscar.m@email.com",
+    "text": "The glass screen protectors all arrived shattered. Your packaging is horrible and completely negligent.",
+    "timestamp": "2026-04-08T10:45:00Z",
+    "channel": "chat"
+  },
+  {
+    "id": "msg_019",
+    "customer_name": "Pam Beesly",
+    "email": "pam.b@email.com",
+    "text": "Can you tell me the pricing tier for wholesale art supplies?",
+    "timestamp": "2026-04-08T10:55:00Z",
+    "channel": "email"
+  },
+  {
+    "id": "msg_020",
+    "customer_name": "Promo Bot",
+    "email": "spam4@promo.com",
+    "text": "Get 10,000 real Instagram followers for just $5. Boost your business today with our guaranteed service.",
+    "timestamp": "2026-04-08T11:00:00Z",
+    "channel": "social_media"
+  },
+  {
+    "id": "msg_021",
+    "customer_name": "Quinn Fabray",
+    "email": "quinn.f@email.com",
+    "text": "I need to change my shipping address before the item ships out tomorrow!",
+    "timestamp": "2026-04-08T11:15:00Z",
+    "channel": "chat"
+  },
+  {
+    "id": "msg_022",
+    "customer_name": "Ryan Howard",
+    "email": "ryan.h@email.com",
+    "text": "You charged my bank account twice for order #4455. Refund the second charge immediately or I'm calling my bank.",
+    "timestamp": "2026-04-08T11:25:00Z",
+    "channel": "email"
+  },
+  {
+    "id": "msg_023",
+    "customer_name": "Steve Rogers",
+    "email": "steve.r@email.com",
+    "text": "This protein powder is expired! The date on the bottom says 2024. This is dangerous to sell.",
+    "timestamp": "2026-04-08T11:35:00Z",
+    "channel": "email"
+  },
+  {
+    "id": "msg_024",
+    "customer_name": "Tina Belcher",
+    "email": "tina.b@email.com",
+    "text": "How much does it cost to upgrade to the premium version of the software?",
+    "timestamp": "2026-04-08T11:45:00Z",
+    "channel": "chat"
+  },
+  {
+    "id": "msg_025",
+    "customer_name": "Lottery Winner",
+    "email": "spam5@lotto.com",
+    "text": "You have been selected by the UN to receive a grant of $1,000,000. Send your bank details to claim.",
+    "timestamp": "2026-04-08T11:50:00Z",
+    "channel": "email"
+  },
+  {
+    "id": "msg_026",
+    "customer_name": "Ursula Buffay",
+    "email": "ursula.b@email.com",
+    "text": "Does this ship via FedEx or UPS? I need to know which carrier is handling the delivery.",
+    "timestamp": "2026-04-08T12:05:00Z",
+    "channel": "email"
+  },
+  {
+    "id": "msg_027",
+    "customer_name": "Victor Stone",
+    "email": "victor.s@email.com",
+    "text": "I'm extremely unsatisfied. I want a refund and I want a return label sent to my email today.",
+    "timestamp": "2026-04-08T12:15:00Z",
+    "channel": "chat"
+  },
+  {
+    "id": "msg_028",
+    "customer_name": "Wanda Maximoff",
+    "email": "wanda.m@email.com",
+    "text": "The color of this sofa is completely wrong. It's bright orange, not the subtle red shown in your pictures. It's a rip-off.",
+    "timestamp": "2026-04-08T12:25:00Z",
+    "channel": "email"
+  },
+  {
+    "id": "msg_029",
+    "customer_name": "Xavier Woods",
+    "email": "xavier.w@email.com",
+    "text": "Is the holiday discount code still active? I want to know the final price before I checkout.",
+    "timestamp": "2026-04-08T12:35:00Z",
+    "channel": "social_media"
+  },
+  {
+    "id": "msg_030",
+    "customer_name": "Seo Expert",
+    "email": "spam6@seo.com",
+    "text": "I noticed your website isn't ranking on Google. Pay me $50 and I will put you on page 1 guaranteed.",
+    "timestamp": "2026-04-08T12:40:00Z",
+    "channel": "email"
+  },
+  {
+    "id": "msg_031",
+    "customer_name": "Yvonne Strahovski",
+    "email": "yvonne.s@email.com",
+    "text": "Can you provide a tracking link? The one in my confirmation email leads to a dead page.",
+    "timestamp": "2026-04-08T12:55:00Z",
+    "channel": "chat"
+  },
+  {
+    "id": "msg_032",
+    "customer_name": "Zack Morris",
+    "email": "zack.m@email.com",
+    "text": "Order canceled. I expect to see the funds returned to my PayPal account within 3 business days.",
+    "timestamp": "2026-04-08T13:05:00Z",
+    "channel": "email"
+  },
+  {
+    "id": "msg_033",
+    "customer_name": "Amy Santiago",
+    "email": "amy.s@email.com",
+    "text": "This skincare serum gave me a chemical burn! You need to pull this from your shelves immediately, it is totally unsafe.",
+    "timestamp": "2026-04-08T13:15:00Z",
+    "channel": "chat"
+  },
+  {
+    "id": "msg_034",
+    "customer_name": "Jake Peralta",
+    "email": "jake.p@email.com",
+    "text": "What's the current retail value of the deluxe edition versus the standard edition?",
+    "timestamp": "2026-04-08T13:25:00Z",
+    "channel": "email"
+  },
+  {
+    "id": "msg_035",
+    "customer_name": "Giveaway Bot",
+    "email": "spam7@giveaway.com",
+    "text": "YOU WON! Claim your free PS5 by filling out this quick survey. Limited time offer!!!",
+    "timestamp": "2026-04-08T13:30:00Z",
+    "channel": "social_media"
+  },
+  {
+    "id": "msg_036",
+    "customer_name": "Rosa Diaz",
+    "email": "rosa.d@email.com",
+    "text": "My package was supposed to arrive by 8 PM today, but the tracking hasn't moved from the facility. Update?",
+    "timestamp": "2026-04-08T13:45:00Z",
+    "channel": "chat"
+  },
+  {
+    "id": "msg_037",
+    "customer_name": "Terry Jeffords",
+    "email": "terry.j@email.com",
+    "text": "I've been waiting two weeks for my refund to process. Why is my money still missing?",
+    "timestamp": "2026-04-08T13:55:00Z",
+    "channel": "email"
+  },
+  {
+    "id": "msg_038",
+    "customer_name": "Charles Boyle",
+    "email": "charles.b@email.com",
+    "text": "The food delivery I ordered was completely spoiled. It smells awful and is a massive health code violation.",
+    "timestamp": "2026-04-08T14:05:00Z",
+    "channel": "chat"
+  },
+  {
+    "id": "msg_039",
+    "customer_name": "Gina Linetti",
+    "email": "gina.l@email.com",
+    "text": "Can someone tell me the exact price drop for the Black Friday sale?",
+    "timestamp": "2026-04-08T14:15:00Z",
+    "channel": "social_media"
+  },
+  {
+    "id": "msg_040",
+    "customer_name": "Hacker Man",
+    "email": "spam8@hack.com",
+    "text": "I have hacked your account. Send 1 Bitcoin to this address or I will delete all your files.",
+    "timestamp": "2026-04-08T14:20:00Z",
+    "channel": "email"
+  },
+  {
+    "id": "msg_041",
+    "customer_name": "Ray Holt",
+    "email": "ray.h@email.com",
+    "text": "Please provide the estimated time of arrival for shipment ID #3321.",
+    "timestamp": "2026-04-08T14:35:00Z",
+    "channel": "email"
+  },
+  {
+    "id": "msg_042",
+    "customer_name": "Kelly Kapoor",
+    "email": "kelly.k@email.com",
+    "text": "Please reverse the charges on my card, I am initiating a refund process right now.",
+    "timestamp": "2026-04-08T14:45:00Z",
+    "channel": "chat"
+  },
+  {
+    "id": "msg_043",
+    "customer_name": "Toby Flenderson",
+    "email": "toby.f@email.com",
+    "text": "These aren't real leather. It is clearly cheap polyurethane. I am reporting your store for consumer fraud.",
+    "timestamp": "2026-04-08T14:55:00Z",
+    "channel": "email"
+  },
+  {
+    "id": "msg_044",
+    "customer_name": "Stanley Hudson",
+    "email": "stanley.h@email.com",
+    "text": "What is the cost of buying replacement filters for the coffee machine?",
+    "timestamp": "2026-04-08T15:05:00Z",
+    "channel": "chat"
+  },
+  {
+    "id": "msg_045",
+    "customer_name": "Forex Trader",
+    "email": "spam9@forex.com",
+    "text": "Double your income from home! Our forex trading bots never lose. DM for info.",
+    "timestamp": "2026-04-08T15:10:00Z",
+    "channel": "social_media"
+  },
+  {
+    "id": "msg_046",
+    "customer_name": "Phyllis Vance",
+    "email": "phyllis.v@email.com",
+    "text": "Is it possible to track my delivery on a map? I want to make sure I am home when it arrives.",
+    "timestamp": "2026-04-08T15:25:00Z",
+    "channel": "chat"
+  },
+  {
+    "id": "msg_047",
+    "customer_name": "Angela Martin",
+    "email": "angela.m@email.com",
+    "text": "I am demanding a total refund. The service was terrible and I don't want to pay for this.",
+    "timestamp": "2026-04-08T15:35:00Z",
+    "channel": "email"
+  },
+  {
+    "id": "msg_048",
+    "customer_name": "Dwight Schrute",
+    "email": "dwight.s@email.com",
+    "text": "This survival gear is defective. The compass points South instead of North. Completely useless and dangerous.",
+    "timestamp": "2026-04-08T15:45:00Z",
+    "channel": "email"
+  },
+  {
+    "id": "msg_049",
+    "customer_name": "Jim Halpert",
+    "email": "jim.h@email.com",
+    "text": "Does the price of the monitor include the mounting bracket, or is that extra?",
+    "timestamp": "2026-04-08T15:55:00Z",
+    "channel": "chat"
+  },
+  {
+    "id": "msg_050",
+    "customer_name": "Web Master",
+    "email": "spam10@web.com",
+    "text": "Your website domain is expiring today! Click here to pay $150 to renew immediately or lose it forever.",
+    "timestamp": "2026-04-08T16:00:00Z",
+    "channel": "email"
+  }
+]

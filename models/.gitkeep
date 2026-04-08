@@ -1,0 +1,3 @@
+# Models directory - stores trained model artifacts
+# This directory is tracked by .gitignore
+# Model files are versioned via MLflow and DVC

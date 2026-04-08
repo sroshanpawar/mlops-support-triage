@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environment
+venv/
+.env
+
+# IDE
+.vscode/
+.idea/
+
+# Database
+*.db
+
+# MLflow
+mlruns/
+mlartifacts/
+
+# DVC
+/data/*.json.dvc
+
+# Model artifacts (tracked by DVC/MLflow)
+models/*.pkl
+models/*.joblib
+
+# Output files
+outbound_replies.json
+
+# OS
+.DS_Store
+Thumbs.db
