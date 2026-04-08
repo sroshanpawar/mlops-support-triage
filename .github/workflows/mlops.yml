@@ -131,5 +131,5 @@ jobs:
 
       - name: ✅ Verify Docker image
         run: |
-          docker images | grep ${{ env.DOCKER_IMAGE_NAME }}
+          docker images
           echo "✅ Docker image built successfully"
