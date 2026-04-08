@@ -19,8 +19,8 @@ API_BASE_URL = "http://localhost:8000"
 # ── Page Config ──────────────────────────────────────────────────────────────
 
 st.set_page_config(
-    page_title="Support Triage System — CRM Dashboard",
-    page_icon="🎯",
+    page_title="Nexus Triage — CRM Dashboard",
+    page_icon="⚡",
     layout="wide",
     initial_sidebar_state="expanded",
 )
@@ -36,11 +36,17 @@ st.markdown("""
         font-family: 'Inter', sans-serif;
     }
 
+    /* ── Reduce Top Padding ────────────────────────────────────────────── */
+    .block-container {
+        padding-top: 1rem !important;
+        padding-bottom: 1rem !important;
+    }
+
     /* ── Header ────────────────────────────────────────────────────────── */
     .main-header {
         background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
         padding: 1.8rem 2rem;
-        border-radius: 16px;
+        border-radius: 12px;
         margin-bottom: 1.5rem;
         box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
         border: 1px solid rgba(255, 255, 255, 0.05);
@@ -60,10 +66,10 @@ st.markdown("""
 
     /* ── Metric Cards ──────────────────────────────────────────────────── */
     .metric-card {
-        background: linear-gradient(145deg, #1a1a2e 0%, #16213e 100%);
+        background: rgba(30, 32, 48, 0.85); /* Slightly lighter dark background */
         padding: 1.5rem;
-        border-radius: 14px;
-        border: 1px solid rgba(255, 255, 255, 0.06);
+        border-radius: 12px; /* Rounded corners */
+        border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle border */
         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
         transition: transform 0.2s ease, box-shadow 0.2s ease;
         text-align: center;
@@ -124,24 +130,27 @@ st.markdown("""
     section[data-testid="stSidebar"] .stMarkdown h3 {
         color: #ffffff;
     }
+    
+    /* ── Sidebar Navigation Tabs (st.radio styling) ────────────────────── */
+    .stRadio > div[role="radiogroup"] {
+        gap: 0.4rem;
+        background: transparent;
+    }
+    .stRadio label {
+        background: rgba(255, 255, 255, 0.03);
+        border-radius: 6px;
+        padding: 0.6rem 1rem;
+        transition: background 0.2s, color 0.2s;
+        margin-bottom: 2px;
+    }
+    .stRadio label:hover {
+        background: rgba(255, 255, 255, 0.1);
+    }
 
     /* ── Hide default streamlit elements ───────────────────────────────── */
     #MainMenu {visibility: hidden;}
     footer {visibility: hidden;}
     header {visibility: hidden;}
-
-    /* ── Data Table ─────────────────────────────────────────────────────── */
-    .message-row {
-        background: rgba(26, 26, 46, 0.6);
-        border-radius: 10px;
-        padding: 1rem 1.2rem;
-        margin-bottom: 0.6rem;
-        border: 1px solid rgba(255, 255, 255, 0.04);
-        transition: border-color 0.2s;
-    }
-    .message-row:hover {
-        border-color: rgba(79, 172, 254, 0.3);
-    }
 
     /* ── Tabs ───────────────────────────────────────────────────────────── */
     .stTabs [data-baseweb="tab-list"] {
@@ -155,9 +164,9 @@ st.markdown("""
 
     /* ── Upload Area ───────────────────────────────────────────────────── */
     .upload-zone {
-        background: linear-gradient(145deg, #1a1a2e 0%, #16213e 100%);
+        background: rgba(30, 32, 48, 0.85); /* Match cards background */
         border: 2px dashed rgba(79, 172, 254, 0.3);
-        border-radius: 16px;
+        border-radius: 12px;
         padding: 2rem;
         text-align: center;
         margin: 1rem 0;
@@ -182,7 +191,6 @@ def api_call(method: str, endpoint: str, **kwargs):
         st.error(f"⚠️ API Error: {e.response.text}")
         return None
 
-
 def render_action_badge(action: str) -> str:
     """Render a styled badge for the action type."""
     badge_class = {
@@ -191,7 +199,6 @@ def render_action_badge(action: str) -> str:
         "Discarded": "badge-discarded",
     }.get(action, "badge-auto")
     return f'<span class="badge {badge_class}">{action}</span>'
-
 
 def format_confidence(score: float) -> str:
     """Format confidence score with color coding."""
@@ -208,7 +215,7 @@ def format_confidence(score: float) -> str:
 # ── Sidebar ──────────────────────────────────────────────────────────────────
 
 with st.sidebar:
-    st.markdown("## 🎯 Support Triage")
+    st.markdown("## ⚡ Nexus Triage")
     st.markdown("---")
 
     # System status
@@ -242,7 +249,7 @@ with st.sidebar:
     st.markdown("---")
     st.markdown(
         '<p style="color: rgba(255,255,255,0.3); font-size: 0.75rem; text-align: center;">'
-        'Smart Triage System v1.0<br>MLOps-Driven Architecture</p>',
+        'Nexus Triage CRM v2.0<br>MLOps-Driven Architecture</p>',
         unsafe_allow_html=True,
     )
 
@@ -251,7 +258,7 @@ with st.sidebar:
 
 st.markdown(
     '<div class="main-header">'
-    "<h1>🎯 Smart Post-Purchase Support Triage</h1>"
+    "<h1>⚡ Nexus Post-Purchase Support Triage</h1>"
     "<p>AI-powered customer message classification, confidence-based escalation & automated response system</p>"
     "</div>",
     unsafe_allow_html=True,
@@ -533,17 +540,28 @@ elif page == "📤 Upload & Process":
                     if all_results:
                         st.markdown("<br>", unsafe_allow_html=True)
                         results_df = pd.DataFrame(all_results)
-                        results_df["confidence_pct"] = (results_df["confidence_score"] * 100).round(1)
+                        results_df["confidence_pct"] = (results_df["confidence_score"] * 100).round(1).astype(str) + "%"
 
-                        st.dataframe(
-                            results_df[["customer_name", "original_text", "predicted_intent",
+                        df_display = results_df[["customer_name", "original_text", "predicted_intent",
                                        "confidence_pct", "action_taken"]].rename(columns={
                                 "customer_name": "Customer",
                                 "original_text": "Message",
                                 "predicted_intent": "Intent",
                                 "confidence_pct": "Confidence %",
                                 "action_taken": "Action",
-                            }),
+                            })
+                        
+                        def highlight_rows(row):
+                            if row['Action'] == 'Escalated':
+                                return ['background-color: rgba(250, 112, 154, 0.2)'] * len(row)
+                            elif row['Action'] == 'Auto-Reply':
+                                return ['background-color: rgba(67, 233, 123, 0.2)'] * len(row)
+                            return [''] * len(row)
+                            
+                        styled_df = df_display.style.apply(highlight_rows, axis=1)
+
+                        st.dataframe(
+                            styled_df,
                             use_container_width=True,
                             height=400,
                         )
@@ -584,26 +602,29 @@ elif page == "💬 Message Explorer":
     if data and data["messages"]:
         st.caption(f"Showing {len(data['messages'])} of {data['total']} messages")
 
-        for msg in data["messages"]:
-            action_badge = render_action_badge(msg["action_taken"])
-            conf_display = format_confidence(msg["confidence_score"])
+        df_msgs = pd.DataFrame(data["messages"])
+        df_msgs["confidence_pct"] = (df_msgs["confidence_score"] * 100).round(1).astype(str) + "%"
+        
+        df_display = df_msgs[["customer_name", "original_text", "predicted_intent", 
+                              "confidence_pct", "action_taken", "channel"]].rename(columns={
+            "customer_name": "Customer",
+            "original_text": "Message",
+            "predicted_intent": "Intent",
+            "confidence_pct": "Confidence %",
+            "action_taken": "Action",
+            "channel": "Channel"
+        })
+        
+        def highlight_message_rows(row):
+            if row['Action'] == 'Escalated':
+                return ['background-color: rgba(250, 112, 154, 0.2)'] * len(row)
+            elif row['Action'] == 'Auto-Reply':
+                return ['background-color: rgba(67, 233, 123, 0.2)'] * len(row)
+            return [''] * len(row)
+            
+        styled_msgs = df_display.style.apply(highlight_message_rows, axis=1)
+        st.dataframe(styled_msgs, use_container_width=True, height=600)
 
-            st.markdown(
-                f'<div class="message-row">'
-                f'<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">'
-                f'<span style="color: #4facfe; font-weight: 600;">{msg.get("customer_name", "Unknown")}</span>'
-                f'<span>{action_badge}</span>'
-                f"</div>"
-                f'<p style="color: #e0e0e0; margin: 0 0 0.5rem 0; font-size: 0.9rem;">{msg["original_text"]}</p>'
-                f'<div style="display: flex; gap: 1.5rem; font-size: 0.8rem; color: rgba(255,255,255,0.4);">'
-                f'<span>🏷️ {msg["predicted_intent"]}</span>'
-                f"<span>📊 {conf_display}</span>"
-                f'<span>📧 {msg.get("channel", "N/A")}</span>'
-                f'<span>🕐 {msg.get("processed_at", "N/A")}</span>'
-                f"</div>"
-                f"</div>",
-                unsafe_allow_html=True,
-            )
     elif data:
         st.info("No messages found matching the selected filters.")
     else:

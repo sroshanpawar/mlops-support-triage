@@ -15,7 +15,7 @@ MODEL_PATH = os.path.join(BASE_DIR, "models", "intent_classifier.joblib")
 OUTBOUND_REPLIES_PATH = os.path.join(BASE_DIR, "outbound_replies.json")
 
 # ── Confidence thresholds ────────────────────────────────────────────────────
-HIGH_CONFIDENCE_THRESHOLD = 0.85
+HIGH_CONFIDENCE_THRESHOLD = 0.30
 
 # ── Intent risk classification ───────────────────────────────────────────────
 ROUTINE_INTENTS = {"Shipping_Inquiry", "Price_Inquiry", "Spam"}
