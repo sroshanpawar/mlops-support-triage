@@ -212,6 +212,7 @@ def format_confidence(score: float) -> str:
     return f'<span style="color: {color}; font-weight: 600;">{pct:.1f}%</span>'
 
 
+
 # ── Sidebar ──────────────────────────────────────────────────────────────────
 
 with st.sidebar:
@@ -565,6 +566,27 @@ elif page == "📤 Upload & Process":
                             use_container_width=True,
                             height=400,
                         )
+
+                        # ── Meta Webhook Authorization ───────────────────
+                        auto_replied = [
+                            r for r in all_results
+                            if r.get("action_taken") == "Auto-Reply"
+                        ]
+                        if auto_replied:
+                            st.divider()
+                            st.subheader("📤 Meta Webhook Authorization")
+                            st.info(
+                                f"**{len(auto_replied)}** auto-replied messages are ready "
+                                f"to be sent back to Meta as a webhook payload."
+                            )
+                            payload_json = json.dumps(auto_replied, indent=4)
+                            st.download_button(
+                                label="🚀 Authorize & Send Auto-Replies to Meta",
+                                data=payload_json,
+                                file_name="meta_replies_payload.json",
+                                mime="application/json",
+                                type="primary",
+                            )
 
         except json.JSONDecodeError:
             st.error("❌ Invalid JSON file. Please check the file format.")
